@@ -177,8 +177,14 @@ mcd rpc tools/list --token "$MCD_MCP_TOKEN"
 安装方式：
 
 ```bash
+openclaw plugins install mcd-mcp-cli
+```
+
+本地开发调试时，仍然可以使用本地目录安装：
+
+```bash
 pnpm run build
-openclaw plugins install -l /Users/bytedance/opensource/mcd-mcp-cli
+openclaw plugins install -l /path/to/mcd-mcp-cli
 ```
 
 然后在 OpenClaw 配置里启用并填写：

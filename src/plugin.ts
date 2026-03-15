@@ -177,7 +177,7 @@ async function executeRemoteTool(
     protocolVersion: config.protocolVersion ?? DEFAULT_PROTOCOL_VERSION,
     clientInfo: {
       name: "mcd-mcp-openclaw-plugin",
-      version: "0.1.0",
+      version: "0.0.2",
     },
     fetchImpl: getFetch(),
   });
