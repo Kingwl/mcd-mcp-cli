@@ -1,0 +1,51 @@
+{
+  "name": "mcd-mcp-cli",
+  "version": "0.1.0",
+  "description": "TypeScript CLI for the McDonald's China MCP server.",
+  "type": "module",
+  "bin": {
+    "mcd": "./bin/mcd.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "openclaw.plugin.json",
+    ".env.example"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "openclaw": {
+    "extensions": [
+      "./dist/plugin.js"
+    ]
+  },
+  "scripts": {
+    "build": "rslib build",
+    "build:watch": "rslib build --watch",
+    "test": "rstest run",
+    "test:watch": "rstest watch",
+    "typecheck": "tsc --noEmit -p tsconfig.typecheck.json"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rslib/core": "^0.20.0",
+    "@rstest/core": "^0.9.2",
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3"
+  }
+}

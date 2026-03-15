@@ -1,0 +1,44 @@
+{
+  "id": "mcd-mcp",
+  "name": "McDonald's China MCP",
+  "description": "Bridge the remote McDonald's China MCP server into OpenClaw agent tools.",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "token": {
+        "type": "string",
+        "description": "McDonald's China MCP Token. Sent as Authorization: Bearer <token>."
+      },
+      "url": {
+        "type": "string",
+        "default": "https://mcp.mcd.cn",
+        "description": "Remote MCP server URL."
+      },
+      "protocolVersion": {
+        "type": "string",
+        "default": "2025-06-18",
+        "description": "Requested MCP protocol version."
+      }
+    },
+    "required": ["token"]
+  },
+  "uiHints": {
+    "fields": {
+      "token": {
+        "label": "MCD MCP Token",
+        "sensitive": true,
+        "placeholder": "Paste your MCD MCP token"
+      },
+      "url": {
+        "label": "MCP URL",
+        "placeholder": "https://mcp.mcd.cn"
+      },
+      "protocolVersion": {
+        "label": "Protocol Version",
+        "placeholder": "2025-06-18"
+      }
+    }
+  }
+}

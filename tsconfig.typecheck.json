@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+    "rslib.config.ts",
+    "rstest.config.ts"
+  ]
+}
