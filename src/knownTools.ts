@@ -16,7 +16,7 @@ export const KNOWN_TOOLS: KnownTool[] = [
       "获取麦当劳常见餐品的营养成分数据，包括热量、蛋白质、脂肪、碳水化合物等。",
     inputHint: "无需入参",
     openclawName: "mcd_list_nutrition_foods",
-    optional: false,
+    optional: true,
     parametersSchema: {
       type: "object",
       additionalProperties: false,
@@ -149,7 +149,7 @@ export const KNOWN_TOOLS: KnownTool[] = [
     inputHint:
       '{"storeCode":"12345","beCode":"12345","items":[{"productCode":"920215","quantity":1}]}',
     openclawName: "mcd_create_order",
-    optional: true,
+    optional: false,
     parametersSchema: {
       type: "object",
       additionalProperties: false,
@@ -227,7 +227,7 @@ export const KNOWN_TOOLS: KnownTool[] = [
     description: "自动领取当前可领取的麦麦省优惠券。",
     inputHint: "无需入参",
     openclawName: "mcd_auto_bind_coupons",
-    optional: true,
+    optional: false,
     parametersSchema: {
       type: "object",
       additionalProperties: false,
@@ -295,7 +295,7 @@ export const KNOWN_TOOLS: KnownTool[] = [
     description: "使用积分兑换指定商品券，完成扣积分和发券。",
     inputHint: '{"skuId":10997,"count":1}',
     openclawName: "mcd_mall_create_order",
-    optional: true,
+    optional: false,
     parametersSchema: {
       type: "object",
       additionalProperties: false,

@@ -47,6 +47,11 @@ test("plugin registers mapped tools and generic bridge", () => {
   );
   expect(createAddress?.options?.optional).toBe(true);
 
+  const createOrder = registrations.find(
+    (item) => item.tool.name === "mcd_create_order",
+  );
+  expect(createOrder?.options?.optional).toBe(false);
+
   const nowTime = registrations.find(
     (item) => item.tool.name === "mcd_now_time_info",
   );
