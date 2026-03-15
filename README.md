@@ -35,12 +35,12 @@
 发布到 npm 前建议执行：
 
 ```bash
-npm run typecheck
-npm test
-npm publish --dry-run
+pnpm run typecheck
+pnpm test
+pnpm publish --dry-run
 ```
 
-包内已经配置 `prepack`，发布时会自动执行 `npm run build`。
+包内已经配置 `prepack`，发布时会自动执行 `pnpm run build`。
 
 ## 配置
 
@@ -88,15 +88,16 @@ MCD_MCP_TOKEN=你的_mcp_token
 ## 安装与使用
 
 ```bash
-npm run build
-npm link
+pnpm install
+pnpm run build
+pnpm link --global
 mcd --help
 ```
 
 也可以直接运行：
 
 ```bash
-npm run build
+pnpm run build
 node ./bin/mcd.js --help
 ```
 
@@ -176,7 +177,7 @@ mcd rpc tools/list --token "$MCD_MCP_TOKEN"
 安装方式：
 
 ```bash
-npm run build
+pnpm run build
 openclaw plugins install -l /Users/bytedance/opensource/mcd-mcp-cli
 ```
 

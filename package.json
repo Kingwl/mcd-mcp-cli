@@ -1,6 +1,6 @@
 {
   "name": "mcd-mcp-cli",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "TypeScript CLI for the McDonald's China MCP server.",
   "keywords": [
     "mcp",
@@ -17,6 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/Kingwl/mcd-mcp-cli.git"
   },
+  "packageManager": "pnpm@10.17.1",
   "type": "module",
   "bin": {
     "mcd": "bin/mcd.js"
@@ -47,7 +48,7 @@
   "scripts": {
     "build": "rslib build",
     "build:watch": "rslib build --watch",
-    "prepack": "npm run build",
+    "prepack": "pnpm run build",
     "test": "rstest run",
     "test:watch": "rstest watch",
     "typecheck": "tsc --noEmit -p tsconfig.typecheck.json"
