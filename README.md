@@ -30,6 +30,18 @@
 - 语言：TypeScript
 - 构建产物：`esm + cjs`
 
+## 发布
+
+发布到 npm 前建议执行：
+
+```bash
+npm run typecheck
+npm test
+npm publish --dry-run
+```
+
+包内已经配置 `prepack`，发布时会自动执行 `npm run build`。
+
 ## 配置
 
 优先级：命令行参数 > 环境变量 > 默认值。

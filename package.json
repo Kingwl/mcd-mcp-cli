@@ -2,14 +2,30 @@
   "name": "mcd-mcp-cli",
   "version": "0.1.0",
   "description": "TypeScript CLI for the McDonald's China MCP server.",
+  "keywords": [
+    "mcp",
+    "openclaw",
+    "cli",
+    "mcd",
+    "mcdonalds"
+  ],
+  "homepage": "https://github.com/Kingwl/mcd-mcp-cli#readme",
+  "bugs": {
+    "url": "https://github.com/Kingwl/mcd-mcp-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kingwl/mcd-mcp-cli.git"
+  },
   "type": "module",
   "bin": {
-    "mcd": "./bin/mcd.js"
+    "mcd": "bin/mcd.js"
   },
   "files": [
     "dist",
     "bin",
     "README.md",
+    "LICENSE",
     "openclaw.plugin.json",
     ".env.example"
   ],
@@ -31,6 +47,7 @@
   "scripts": {
     "build": "rslib build",
     "build:watch": "rslib build --watch",
+    "prepack": "npm run build",
     "test": "rstest run",
     "test:watch": "rstest watch",
     "typecheck": "tsc --noEmit -p tsconfig.typecheck.json"
