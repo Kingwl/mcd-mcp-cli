@@ -2,7 +2,7 @@
   "id": "mcd-mcp-cli",
   "name": "McDonald's China MCP",
   "description": "Bridge the remote McDonald's China MCP server into OpenClaw agent tools.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "configSchema": {
     "type": "object",
     "additionalProperties": false,

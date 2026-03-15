@@ -2,7 +2,7 @@
 
 面向麦当劳中国远程 MCP Server 的 TypeScript CLI。
 
-实现依据是 [麦当劳MCP平台.pdf](/Users/bytedance/Downloads/麦当劳MCP平台.pdf) 中描述的接入方式：
+实现依据是文档 [麦当劳MCP平台](https://open.mcd.cn/mcp/doc) 中描述的接入方式：
 
 - MCP URL: `https://mcp.mcd.cn`
 - 鉴权: `Authorization: Bearer YOUR_MCP_TOKEN`
@@ -72,8 +72,8 @@ CLI 启动时会自动加载当前工作目录下的 `.env`。
 
 仓库已提供：
 
-- [.env.example](/Users/bytedance/opensource/mcd-mcp-cli/.env.example)
-- [.env](/Users/bytedance/opensource/mcd-mcp-cli/.env)
+- [.env.example](./.env.example)
+- [.env](./.env)
 
 你只需要把 `.env.example` 的内容参考着填进 `.env`，至少设置：
 
@@ -170,7 +170,7 @@ mcd rpc tools/list --token "$MCD_MCP_TOKEN"
 
 仓库已包含：
 
-- [openclaw.plugin.json](/Users/bytedance/opensource/mcd-mcp-cli/openclaw.plugin.json)
+- [openclaw.plugin.json](./openclaw.plugin.json)
 - `package.json > openclaw.extensions`
 - 构建产物入口 `dist/plugin.js`
 
@@ -184,7 +184,7 @@ openclaw plugins install mcd-mcp-cli
 
 ```bash
 pnpm run build
-openclaw plugins install -l /path/to/mcd-mcp-cli
+openclaw plugins install -l .
 ```
 
 然后在 OpenClaw 配置里启用并填写：
