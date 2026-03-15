@@ -12,7 +12,7 @@ import {
   type FetchLike,
 } from "./mcp.js";
 
-const PLUGIN_ID = "mcd-mcp";
+const PLUGIN_ID = "mcd-mcp-cli";
 
 type JsonSchema = Record<string, unknown>;
 
@@ -176,8 +176,8 @@ async function executeRemoteTool(
     token: config.token ?? "",
     protocolVersion: config.protocolVersion ?? DEFAULT_PROTOCOL_VERSION,
     clientInfo: {
-      name: "mcd-mcp-openclaw-plugin",
-      version: "0.0.2",
+      name: "mcd-mcp-cli-openclaw-plugin",
+      version: "0.0.3",
     },
     fetchImpl: getFetch(),
   });

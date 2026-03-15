@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 
 export const DEFAULT_MCP_URL = "https://mcp.mcd.cn";
 export const DEFAULT_PROTOCOL_VERSION = "2025-06-18";
-export const DEFAULT_SERVER_NAME = "mcd-mcp";
+export const DEFAULT_SERVER_NAME = "mcd-mcp-cli";
 
 export interface CliConfig {
   token: string;

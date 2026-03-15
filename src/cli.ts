@@ -230,7 +230,7 @@ function createClient({
       protocolVersion: config.protocolVersion,
       clientInfo: {
         name: "mcd-mcp-cli",
-        version: "0.0.2",
+        version: "0.0.3",
       },
       fetchImpl,
       extraHeaders: flags.header,

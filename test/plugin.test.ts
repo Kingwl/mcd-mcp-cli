@@ -23,7 +23,7 @@ test("plugin registers mapped tools and generic bridge", () => {
     config: {
       plugins: {
         entries: {
-          "mcd-mcp": {
+          "mcd-mcp-cli": {
             config: {
               token: "token-123"
             }
@@ -114,7 +114,7 @@ test("plugin tool executes remote MCP tool using plugin config", async () => {
       config: {
         plugins: {
           entries: {
-            "mcd-mcp": {
+            "mcd-mcp-cli": {
               config: {
                 token: "token-123",
                 url: "https://mcp.mcd.cn",
